@@ -112,7 +112,7 @@ contract Evaluator
 		require(studentErc20[msg.sender].allowance(address(this), msg.sender) == 0, "Allowance not implemented or incorrectly set");
 		require(studentErc20[msg.sender].balanceOf(address(this)) == 0, "BalanceOf not implemented or incorrectly set");
 		require(studentErc20[msg.sender].approve(msg.sender, 10), "Approve not implemented");
-
+	
 		// Crediting points
 		if (!exerciceProgression[msg.sender][6])
 		{
